@@ -167,3 +167,68 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+/* === Responsive Styles for Split Bill App === */
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    padding: 2rem;
+  }
+
+  .sidebar > .button {
+    float: none;
+    margin: 0 auto 1.2rem auto;
+    display: block;
+    width: fit-content;
+  }
+
+  .sidebar ul {
+    font-size: 1.6rem;
+  }
+
+  .sidebar li {
+    grid-template-columns: 4rem 1fr auto;
+    gap: 1rem;
+  }
+
+  form {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    grid-template-columns: 1fr;
+  }
+
+  form h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  form .button {
+    grid-column: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar li {
+    grid-template-columns: 3.5rem 1fr auto;
+  }
+
+  input,
+  select {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
+  }
+}
